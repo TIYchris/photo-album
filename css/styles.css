@@ -1,0 +1,92 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit; }
+  *:before {
+    box-sizing: inherit; }
+  *:after {
+    box-sizing: inherit; }
+body {
+	background-color: gray;
+}
+#photoContainer {
+	height: 900px;
+	width: 950px;
+	background-color: lightgray;
+	margin: auto;
+}
+
+.header{
+	height:200px;
+	width: 100%;
+	background-color: darkgray;
+	color:black;
+	text-align: center;
+	font-size: 70px;
+	padding-top: 55px;
+}
+.albums	img {
+    height: 200px; 
+    width: 230px; 
+    padding-left: 50px;
+    margin-bottom: 60px;
+}
+
+.albumName {
+	left: -150px;
+	top: -35px;
+	position: relative;
+	font-size: 15px;
+	margin-left: 25px;
+}	
+#albumContainer{
+	height: 900px;
+	width: 950px;
+	background-color: lightgray;
+	margin: auto;
+}
+
+.button {
+	height:50px;
+	width: 300px;
+	margin-top:30px;
+	font-size: 20px;
+	margin-left: 30px;
+}
+
+#buttonContainer {
+	height: 900px;
+	width: 300px;
+	position: absolute;
+	margin-top: 250px;
+	margin-left: 50px;
+}
+
+.fullImage {
+	height: 800px;
+	width: auto;
+	margin: auto;
+	margin-left: 210px;
+}
+
+#imageContainer {
+	height: 900px;
+	width: 950px;
+	background-color: lightgray;
+	margin: auto;
+}
+
+.backButton {
+	height:50px;
+	width: 300px;
+	position: absolute;
+	font-size: 15px;
+	margin-top: 150px;
+	margin-left: 65px;
+}
+
+
+
+

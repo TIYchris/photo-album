@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Album</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script id="albumGalleryTemplate" type="text">
+        <div id="photoContainer">
+            <h1 class="header">My Albums</h1>
+            {{#albums}}
+              <span class="albums">
+                <img id="album{{id}}" src="{{thumb}}" />
+              </span>
+              <span class="albumName"> {{name}} </span>
+            {{/albums}}
+        </div>
+    </script>
+
+    <script id="albumListTemplate" type="text">
+        <div id="buttonContainer">
+            {{#albums}}
+              <button class="button" id="album{{id}}">{{name}}</button>
+            {{/albums}}
+        </div>
+
+        <div id="albumContainer">
+            <h1 class="header">{{selectedAlbum.name}}</h1>
+            {{#selectedAlbum.images}}
+              <span class="albums">
+                <img id="image{{id}}" src="{{img}}"/>
+              </span>
+              <span class="albumName"> {{name}}</span>
+            {{/selectedAlbum.images}}
+        </div>
+    </script>
+
+    <script id="imageTemplate" type="text">
+        <button class="backButton" id="backButton">Back to {{selectedAlbum.name}}</button>
+        
+        <div id="imageContainer">
+          <h1 class="header">{{selectedImage.name}}</h1> 
+          <span class="fullImage"><img id={{selectedImage.name}} src="{{selectedImage.img}}"/></span>
+        </div>
+    </script>
+
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-I1nTg78tSrZev3kjvfdM5A5Ak/blglGzlaZANLPDl3I=" crossorigin="anonymous"></script>
+    <script src="js/mustache.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
